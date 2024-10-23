@@ -1,0 +1,53 @@
+@import url('./animations.css');
+
+body {
+  background-color: black;
+  color: #32E0C4;
+}
+
+.bg-greenlight, .btn-greenlight {
+  background-color: #32E0C4;
+}
+
+.border-greenlight {
+  border-color: #32E0C4;
+}
+
+.btn-greenlight-inv{
+  color: #32E0C4;
+  background-color: black;
+  border-color: #32E0C4 !important;
+}
+
+.btn-greenlight, .btn-greenlight-inv{
+  text-decoration: none !important;
+}
+
+.btn-greenlight-inv:hover{
+  color: #32E0C4;
+}
+
+
+.font-typew {
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.screenbox {
+  min-height: 95vh !important;
+  height: auto !important;
+}
+
+.ul-nonestyle {
+  list-style: none;
+}
+
+.img-small{
+  height: 200px;
+  width: auto; 
+  max-width: 100%; 
+}
+
+.border-dotted-custom {
+  border-style: dotted !important;
+}

@@ -1,0 +1,68 @@
+.typewriter,
+.typewriter-d1 {
+    font-family: monospace;
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    border-right: 3px solid black;
+    /* Simula el cursor */
+    display: inline-block;
+    /* Necesario para el efecto */
+    width: 0;
+    animation: typing 2s steps(100, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.typewriter-d1 {
+    animation-delay: 2.1s;
+}
+
+.blink {
+    animation: blink-effect 3s infinite;
+}
+
+@keyframes blink-effect {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.text-hover {
+    position: relative;
+    display: inline-block;
+    color: #ff5722; /* Color del texto */
+  }
+  
+  .text-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF; /* Color de la línea (blanca) */
+    left: 50%;
+    bottom: 3px; /* Ajusta la distancia debajo del texto */
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  
+  .text-hover:hover::after {
+    width: 100%;
+    left: 0; /* Hace que la línea se expanda desde el centro hacia los lados */
+  }
+  
