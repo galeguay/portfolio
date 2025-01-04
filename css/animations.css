@@ -2,12 +2,9 @@
 .typewriter-d1 {
     font-family: monospace;
     white-space: nowrap;
-    /* Evita que el texto se divida en varias líneas */
     overflow: hidden;
     border-right: 3px solid black;
-    /* Simula el cursor */
     display: inline-block;
-    /* Necesario para el efecto */
     width: 0;
     animation: typing 2s steps(100, end) forwards, blink 0.75s step-end infinite;
 }
@@ -47,7 +44,7 @@
 .text-hover {
     position: relative;
     display: inline-block;
-    color: #ff5722; /* Color del texto */
+    color: #ff5722;
   }
   
   .text-hover::after {
@@ -55,14 +52,13 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #FFFFFF; /* Color de la línea (blanca) */
-    left: 50%;
-    bottom: 3px; /* Ajusta la distancia debajo del texto */
+    background-color: #FFFFFF;
+    left: 0;
+    bottom: 3px;
     transition: width 0.4s ease, left 0.4s ease;
   }
   
   .text-hover:hover::after {
     width: 100%;
-    left: 0; /* Hace que la línea se expanda desde el centro hacia los lados */
   }
   

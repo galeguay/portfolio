@@ -5,4 +5,9 @@ Soy desarrollador full-stack Java y Android, responsable del diseño y desarollo
 
 Contacto: [LinkedIn](https://linkedin.com/in/galeguay) | [Email](mailto:galeguay@gmail.com)
 
-
+### Prácticas
+Arquitecturas Web:
+ - [JDBC](https://github.com/galeguay/arquitecturas-web/tree/main/EjercicioIntegrador1)
+ - [JPA y JPQL](https://github.com/galeguay/arquitecturas-web/tree/main/EjercicioIntegrador2)
+ - [REST y Spring Boot](https://github.com/galeguay/arquitecturas-web/tree/main/EjercicioIntegrador3)
+ - [Microservicios](https://github.com/galeguay/arquitecturas-web/tree/main/EjercicioIntegradorMsvc)
