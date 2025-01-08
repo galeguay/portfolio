@@ -1,64 +1,73 @@
-.typewriter,
-.typewriter-d1 {
-    font-family: monospace;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid black;
-    display: inline-block;
-    width: 0;
-    animation: typing 2s steps(100, end) forwards, blink 0.75s step-end infinite;
+
+/* Links Portada home*/
+.texto-hover {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+  color: #252632;
+  background-color: #ffffff;
+  padding: 1px;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
+.texto-hover::before,
+.texto-hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: left 0.3s ease;
 }
 
-.typewriter-d1 {
-    animation-delay: 2.1s;
+.texto-hover::before {
+  background-color: rgb(255, 255, 255); /* Fondo blanco */
 }
 
-.blink {
-    animation: blink-effect 3s infinite;
+.texto-hover::after {
+  background-color: rgb(0, 0, 0); /* Fondo negro */
+  transition-delay: 0.2s;
 }
 
-@keyframes blink-effect {
-
-    0%,
-    50%,
-    100% {
-        opacity: 1;
-    }
-
-    25%,
-    75% {
-        opacity: 0;
-    }
+.texto-hover:hover::before {
+  left: 0; /* El fondo blanco se desplaza */
 }
 
-.text-hover {
-    position: relative;
-    display: inline-block;
-    color: #ff5722;
+.texto-hover:hover::after {
+  left: 0; /* El fondo negro también se desplaza */
+}
+
+/*  Portada home*/
+.p-effect {
+  opacity: 0;
+  position: relative;
+  animation: slideFadeIn 1.5s ease-out forwards;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  
-  .text-hover::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #FFFFFF;
-    left: 0;
-    bottom: 3px;
-    transition: width 0.4s ease, left 0.4s ease;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .text-hover:hover::after {
-    width: 100%;
+}
+
+.redes-effect {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
+  to {
+    opacity: 1;
+  }
+}

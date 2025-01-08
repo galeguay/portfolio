@@ -1,41 +1,56 @@
 @import url('./animations.css');
 
+@font-face {
+  font-family: 'Varela';
+  src: url('../fonts/Varela.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geologica';
+  src: url('../fonts/Geologica.ttf') format('truetype');
+}
+
+/* 
+.color1 {color: #140f07;}
+.color2 {color: #172b35;}
+.color3 {color: #306177;}
+.color4 {color: #4e9cc1;}
+.color5 {color: #6de1fd;}
+*/
+
 body {
-  background-color: black;
-  color: #32E0C4;
+  font-family: 'Geologica', sans-serif;  
+  color: #172b35;
 }
 
-.bg-greenlight, .btn-greenlight {
-  background-color: #32E0C4;
+.portada{
+  background-color: #172b35;
+  color: #6de1fd;
 }
 
-.border-greenlight {
-  border-color: #32E0C4;
+.text-c1{
+  color: #6de1fd;
 }
 
-.btn-greenlight-inv{
-  color: #32E0C4;
-  background-color: black;
-  border-color: #32E0C4 !important;
+.text-c2{
+  color: #4e9cc1;
 }
 
-.btn-greenlight, .btn-greenlight-inv{
-  text-decoration: none !important;
-}
-
-.btn-greenlight-inv:hover{
-  color: #32E0C4;
+.bg-c1{
+  background-color: #172b35;
 }
 
 
-.font-typew {
-  font-family: 'Courier New', Courier, monospace;
-
+.bg-c2{
+  background-color: #6de1fd;
 }
 
-.screenbox {
-  min-height: 95vh !important;
-  height: auto !important;
+.bg-c3{
+  background-color: #306177;
+}
+
+.border-c1{
+  background-color: #4e9cc1;
 }
 
 .ul-nonestyle {
@@ -50,4 +65,16 @@ body {
 
 .border-dotted-custom {
   border-style: dotted !important;
+}
+
+.default-space{
+  padding-top: 100px;
+}
+
+.last-section{
+  padding-bottom: 100px;
+}
+
+.link:hover{
+  color: white !important;
 }
