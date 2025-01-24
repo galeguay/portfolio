@@ -4,7 +4,7 @@ Soy Full-Stack Java y Android Developer, responsable del diseño y desarollo de 
 [Mi portafolio](https://galeguay.github.io/portfolio/) | [LinkedIn](https://linkedin.com/in/galeguay) | [Email](mailto:galeguay@gmail.com)
 
 ***
-### Prácticas
+### Proyectos y prácticas
 
 Arquitecturas Web:
  - [JDBC](https://github.com/galeguay/arquitecturas-web/tree/main/EjercicioIntegrador1)
